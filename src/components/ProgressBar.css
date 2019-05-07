@@ -1,0 +1,67 @@
+.progress-bar {
+    display: flex;
+    position: relative;
+    max-width: 450px;
+    margin: 100px auto;
+    padding: 15px;
+    align-items: flex-end;
+}
+.progress-bar_input-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+.progress-bar_input {
+    padding: 3px;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    border-bottom: 1px solid #6aa9ae;
+    outline: none;
+    margin-bottom: 5px;
+}
+.progress-bar_btn {
+    padding: 3px;
+    background-color: #6aa9ae;
+    cursor: pointer;
+    text-align: center;
+}
+.progress-bar_container {
+    background-color: #42516e;
+    position: relative;
+    padding: 3px 10px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.progress-bar_line {
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    background-color: #6aa9ae;
+}
+.progress-bar_title, .progress-bar_time-left {
+    z-index: 2;
+}
+.progress-bar_modal {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #2f3a4e;
+    border: 3px solid #6aa9ae;
+    font-size: 22px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
